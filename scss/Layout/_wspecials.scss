@@ -4,17 +4,17 @@
 /* Specials v1 (a table of specials)
 ------------------------------------------------*/
 
-.l-wellytables-wrapper {
+.l-wtables-wrapper {
 
     @include set-background($primary-color-1);
 }
 
-.l-wellytables-view {
+.l-wtables-view {
 
 }
 
 
-.l-wellytable-wrapper {
+.l-wtable-wrapper {
 
     @include set-background($primary-color-1);
 
@@ -27,7 +27,7 @@
     }
 }
 
-.l-wellytable-view {
+.l-wtable-view {
 
   overflow: hidden;
 
@@ -71,26 +71,26 @@
       flex: 0 0 30%;
   }
 
-  .l-wellyspecial-details {
+  .l-wspecial-details {
     flex-wrap: nowrap;
   }
 
-  .l-wellyspecial-name, .l-wellyspecial-venue, .l-wellyspecial-countdown, .l-wellyspecial-distance {
+  .l-wspecial-name, .l-wspecial-venue, .l-wspecial-countdown, .l-wspecial-distance {
       padding: 0 5px;
   }
 
 
-  .l-wellyspecial-name {
+  .l-wspecial-name {
     flex: 0 0 60%;
   }
 
-  .l-wellyspecial-venue {
+  .l-wspecial-venue {
     flex: 0 0 40%;
   }
 
-  .l-wellyspecial-countdown {}
-  .l-wellyspecial-distance {}
-  .l-wellyspecial-description {}
+  .l-wspecial-countdown {}
+  .l-wspecial-distance {}
+  .l-wspecial-description {}
 
 }
 
@@ -99,13 +99,13 @@
 /* Specials v2 (with special-box)
 ------------------------------------------------*/
 
-.l-wellyspecials-wrapper {
+.l-wspecials-wrapper {
    
   @include set-background($primary-color-1);
   height: 100%;
 }
 
-.l-wellyspecials-view {
+.l-wspecials-view {
 
   display: flex;
   flex-direction: column;
@@ -128,7 +128,7 @@
 
 
 
-.l-wellyspecial-wrapper {
+.l-wspecial-wrapper {
 
   .container {
       max-width: 1050px;
@@ -147,7 +147,7 @@
   }
 }
 
-.l-wellyspecial-box {
+.l-wspecial-box {
   margin: 3px;
   border: 2px solid #999;
   border-radius: 15px 15px;
@@ -155,7 +155,7 @@
   padding-left: 15px; 
 }
 
-.l-wellyspecial-view {
+.l-wspecial-view {
 
   align-items: center;
   justify-content: center;
@@ -171,27 +171,27 @@
 }
 
 
-.l-wellyspecial-name {
+.l-wspecial-name {
   font-size: 17px;
   text-align: left;
 }
 
-.l-wellyspecial-venue {
+.l-wspecial-venue {
   font-size: 15px;
   text-align: right;
 }
 
-.l-wellyspecial-countdown {
+.l-wspecial-countdown {
   p {
     text-align: left;  
   }
 }
 
-.l-wellyspecial-distance {
+.l-wspecial-distance {
   text-align: right;
 }
 
-.l-wellyspecial-description {
+.l-wspecial-description {
   
 }
 

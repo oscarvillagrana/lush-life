@@ -7,7 +7,7 @@
 // Desktop
 @media(min-width: 990px) {
   
-  .l-wellyspecials-wrapper {
+  .l-wspecials-wrapper {
 
     max-width: 100%;
     padding-right: 15px;
@@ -15,7 +15,7 @@
 
   }
 
-  .l-wellyspecial-view {
+  .l-wspecial-view {
     // background-color: red;
   }
 
@@ -24,7 +24,7 @@
 // Tablet
 @media(min-width: 770px) and (max-width: 989px) {
 
-  .l-wellyspecials-wrapper {
+  .l-wspecials-wrapper {
 
     max-width: 100%;
     padding-right: 15px;
@@ -32,7 +32,7 @@
 
   }
 
-.l-wellyspecial-view {
+.l-wspecial-view {
     // background-color: blue;
   }
 
@@ -41,7 +41,7 @@
 // Mobil Landscape
 @media(min-width: 480px) and (max-width: 769px) {
 
-.l-wellyspecial-view {
+.l-wspecial-view {
     // background-color: green;
   }
 
@@ -50,7 +50,7 @@
 // Mobil Portrait
 @media (max-width: 479px) {
 
-.l-wellyspecial-view {
+.l-wspecial-view {
     
   }
 
@@ -65,7 +65,7 @@
 // // middle breaking point
 // @media(min-width: 590px) and (max-width: 1100px) {
 
-//   .l-wellyspecials-wrapper {
+//   .l-wspecials-wrapper {
 
 //     max-width: 100%;
 //     padding-right: 15px;
@@ -77,11 +77,11 @@
 // // smallest breaking point
 // @media (max-width: 581px) {
 
-//   .l-wellyspecials-wrapper {
+//   .l-wspecials-wrapper {
 
 //   }
    
-//   .l-wellyspecials-view {
+//   .l-wspecials-view {
     
 //     // display: block;
 //     // text-align: center;
@@ -93,20 +93,20 @@
 // // middle breaking point
 // @media(min-width: 590px) and (max-width: 1100px) {
 
-//   .l-wellyspecial-wrapper {
+//   .l-wspecial-wrapper {
 //   }
 
-//   .l-wellyspecial-view {
+//   .l-wspecial-view {
 //   }
 // }
 
 // // smallest breaking point
 // @media (max-width: 581px) {
 
-//   .l-wellyspecial-wrapper {
+//   .l-wspecial-wrapper {
 //   }
 
-//   .l-wellyspecial-view {
+//   .l-wspecial-view {
 
 //     // display: none;
 //   }
