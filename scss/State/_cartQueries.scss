@@ -1,0 +1,87 @@
+// Cart
+//-------------------
+
+
+
+// 4 viewports
+//--------------------
+
+// Desktop
+@media(min-width: 770px) {
+
+}
+
+// Tablet
+@media(max-width: 769px) {
+  .l-cart-pricedetails-wrapper{
+    flex-direction: column;
+    // background-color: black;
+  }
+
+  .l-cart-price {
+    min-width: 100%
+  }
+
+  .l-cart-total {
+    min-width: 100%
+  }
+
+  //TODO: make static width everywhere
+  .l-cart-textinput {
+    min-width: 100%
+  }
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+  .l-cart-pricedetails-wrapper{
+    flex-direction: column;
+    // background-color: black;
+  }
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+  .l-cart-pricedetails-wrapper{
+    flex-direction: column;
+    // background-color: black;
+  }
+}
+
+
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 1100px) {
+
+  .cart2 {
+
+    .content {
+
+      article {
+        
+        // flex: 0 0 50%;
+        // min-width: 50%;
+      }
+      
+    }
+  }
+}
+
+// smallest breaking point
+@media (max-width: 581px) {
+  .cart2 {
+
+    .content {
+      
+      // display: block;
+      // text-align: center;
+     
+      article {
+         // min-width: 100%;
+      }
+    }
+  }
+}
+

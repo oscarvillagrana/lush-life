@@ -1,0 +1,33 @@
+/* 4 viewports
+-----------------------------------------*/
+
+
+// Desktop
+@media(min-width: 770px) {
+.l-herostory-wrapper {
+  // justify-content: center;
+}
+
+.l-herostory-view {
+  // background: black;
+
+    max-width: 650px;
+  }
+}
+
+// Tablet
+@media(min-width: 570px) and (max-width: 769px) {
+  .l-herostory-view {
+    max-width: 650px;
+  }
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+}

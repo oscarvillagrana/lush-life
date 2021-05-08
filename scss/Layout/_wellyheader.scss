@@ -1,0 +1,41 @@
+/* Header 
+------------------------------------------------*/
+
+.l-wellynav-wrapper {
+    
+    .container {
+        max-width: 1200px;
+    }
+
+    // @include set-background($primary-color-1);
+    // background-color: white;
+    // color: set-text-color($primary-color-1);
+
+    height: 65px;
+}
+
+.l-wellynav-view {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    ul {
+        display: flex;
+        list-style-type: none;
+    }
+    
+    li {
+        padding: 15px;
+    }
+
+    a {
+        color: set-text-color($primary-color-1)
+    }
+
+    a:hover {
+        color: $primary-color-1;
+    }
+}
+
+

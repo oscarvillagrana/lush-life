@@ -1,0 +1,159 @@
+
+
+/* 4 seperate viewports
+-------------------------------------------------*/
+
+
+// Desktop
+@media(min-width: 990px) {
+  
+  .l-wellyspecials-wrapper {
+
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+  .l-wellyspecial-view {
+    // background-color: red;
+  }
+
+}
+
+// Tablet
+@media(min-width: 770px) and (max-width: 989px) {
+
+  .l-wellyspecials-wrapper {
+
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+
+  }
+
+.l-wellyspecial-view {
+    // background-color: blue;
+  }
+
+}
+
+// Mobil Landscape
+@media(min-width: 480px) and (max-width: 769px) {
+
+.l-wellyspecial-view {
+    // background-color: green;
+  }
+
+}
+
+// Mobil Portrait
+@media (max-width: 479px) {
+
+.l-wellyspecial-view {
+    
+  }
+
+}
+
+
+
+/* 3 seperate viewports
+-------------------------------------------------*/
+
+
+// // middle breaking point
+// @media(min-width: 590px) and (max-width: 1100px) {
+
+//   .l-wellyspecials-wrapper {
+
+//     max-width: 100%;
+//     padding-right: 15px;
+//     padding-left: 15px;
+
+//   }
+// }
+
+// // smallest breaking point
+// @media (max-width: 581px) {
+
+//   .l-wellyspecials-wrapper {
+
+//   }
+   
+//   .l-wellyspecials-view {
+    
+//     // display: block;
+//     // text-align: center;
+    
+//   }
+// }
+
+
+// // middle breaking point
+// @media(min-width: 590px) and (max-width: 1100px) {
+
+//   .l-wellyspecial-wrapper {
+//   }
+
+//   .l-wellyspecial-view {
+//   }
+// }
+
+// // smallest breaking point
+// @media (max-width: 581px) {
+
+//   .l-wellyspecial-wrapper {
+//   }
+
+//   .l-wellyspecial-view {
+
+//     // display: none;
+//   }
+// }
+
+
+
+/* 4 seperate viewports (smaller)
+-------------------------------------------------*/
+
+// Desktop
+@media(min-width: 770px) {
+
+}
+
+// Tablet
+@media(min-width: 570px) and (max-width: 769px) {
+
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+}
+
+
+
+/* 3 viewports
+-------------------------------------------------*/
+
+// large breaking point
+@media(min-width: 1100px) {
+
+}
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 1099px) {
+
+}
+
+// smallest breaking point
+@media (max-width: 581px) {
+
+}
+

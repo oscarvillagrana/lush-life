@@ -1,0 +1,77 @@
+//--------------------
+// Fonts
+//--------------------
+
+$font-stack: Waree-Regular, URW-Bookman-L-Light;
+
+
+//--------------------
+// Main Colors
+//--------------------
+$primary-color-1: wheat;
+// $secondary-color-1: teal;
+$primary-color-2: teal;
+
+
+// $primary-color-1: #7ecbc6;
+$secondary-color-1: #a89dc3;
+$light-color-1: #f3c66e;
+
+
+// $primary-color-2: #dd9dbf;
+$secondary-color-2: #e76898;
+$light-color-2: #f3c66e;
+
+$primary-color-3: #7ecbc6;
+$secondary-color-3: #a89dc3;
+$light-color-3: #f3c66e;
+
+
+//--------------------
+// Functions
+//--------------------
+
+// set text color based on bg
+@function set-text-color($color) {
+  @if(lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff; 
+  }
+}
+
+
+//--------------------
+// Mixins
+//--------------------
+
+// Set background & text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color)
+}
+
+
+//--------
+// colors 
+//--------
+
+.t-primary-colors {
+  @include set-background($primary-color-1);
+}
+
+.t-secondary-colors {
+  @include set-background($primary-color-2);
+}
+
+// testing
+// .red {background-color: red;}.blue {background-color: blue;}.purple {background-color: purple;}
+// .orange {background-color: orange;}.pink {background-color: pink;}.teal {background-color: teal;}
+// .wheat {background-color: wheat;}.white {background-color: white;}
+// .orange {background-color: orange;}.yellow {background-color: yellow;}
+
+// prod
+.red {background-color: none;}.blue {background-color: none;}.purple {background-color: none;}
+.orange {background-color: none;}.pink {background-color: none;}.teal {background-color: none;}
+.wheat {background-color: none;}.white {background-color: none;}
+.orange {background-color: none;}.yellow {background-color: none;}

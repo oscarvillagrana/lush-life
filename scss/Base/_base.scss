@@ -1,0 +1,463 @@
+// Base 
+//--------------------------
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+
+    // //TODO: need to learn about
+    // -webkit-user-selet: none;
+    // -khtml-user-selet: none;
+    // -moz-user-selet: none;
+    // -o-user-selet: none;
+    // user-selet: none;
+
+    // outline-style: none;
+}
+
+body {
+    background-color: $primary-color-1;
+    font-family: $font-stack;
+    line-height: 1.6;
+}
+
+section {
+    display: flex;
+}
+
+// section {
+//     padding: 5px;
+//     background-color: pink;
+// }
+
+
+article, section {
+    width: 100%;
+    // overflow: hidden;
+    // background-color: pink;
+}
+
+//Warning: this breaks l-special-wrapper
+div {
+    // width: 100%;
+}
+
+article {
+    // overflow: hidden;
+}
+
+div {
+    // width: 100%;
+    // background-color: yellow;
+}
+
+img {
+
+}
+
+a {
+    text-decoration: none;
+    color: set-text-color($primary-color-1);
+
+    // background-color: transparent                // for stop highlighting
+}
+
+a:hover {
+    // color: $primary-color-1;
+    text-decoration: none;
+}
+
+
+//--------------------
+// Text
+//--------------------
+
+
+
+h1, h2, h3, h4, h5, p {
+
+    // display: flex;
+    overflow: hidden;
+    text-align: center;
+    font-weight: normal;
+}
+      
+
+h2 {
+    font-size: 34px;
+
+    // font-size: 7vw;      //testing
+}
+
+h3 {
+    font-size: 25px;
+
+    // font-size: 7vw;      //testing
+}
+
+h4 {
+    font-size: 18px;
+
+    // font-size: 7vw;      //testing
+}
+
+h5 {
+    font-size: 14px;
+
+    // font-size: 7vw;      //testing
+}
+
+p {
+     // text-align: left;
+}
+
+
+/* 
+---------------------------------*/
+
+.b-fullwidth {
+  width: 100%;
+}
+
+.b-container {
+    padding: 0 0;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+//-----------------------
+//TODO: rename to wrapper
+//-----------------------
+.b-section-container {
+    max-width: 1100px;
+    // padding: 0 0;
+    // margin: 110px auto;
+    padding: 110px 0;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+}
+
+.b-footer-wrapper {
+   max-width: 1400px;
+  // padding: 0 0;
+  // margin: 110px auto;
+  padding: 50px 0;
+  margin: 0 auto;
+  overflow: auto;
+  width: 100%; 
+}
+
+
+/* Bootstrap based variables
+
+  row
+  col
+    row cols-2
+      col-7 top-left
+      col-5 top-right
+    row cols-2
+      col bottom-left
+      col bottom-right
+
+------------------------------------*/
+
+
+.b-flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.b-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.b-flex-center {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
+    justify-content: center;              // for col?
+    // justify-content: space-between;    // for row?
+    
+    // justify-content: space-evenly;
+}
+
+.b-flex-col-3 {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%; 
+}
+
+.b-flex-col-fullwidth {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+
+//----------------------
+
+
+
+.b-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  // margin-right: -15px;
+  // margin-left: -15px; 
+}
+
+.b-col {
+  -webkit-flex-basis: 0;
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 100%; 
+}
+
+.b-col, .b-col-2, .b-col-5, .b-col-7 {
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  // padding-right: 15px;
+  // padding-left: 15px; 
+}
+
+.b-col-7 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 58.333333%;
+  -ms-flex: 0 0 58.333333%;
+  flex: 0 0 58.333333%;
+  max-width: 58.333333%; 
+}
+
+
+.b-col-5 {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 41.666667%;
+  -ms-flex: 0 0 41.666667%;
+  flex: 0 0 41.666667%;
+  max-width: 41.666667%; 
+}
+
+
+
+
+// TODO: make items not wrap
+.b-grid-center {
+  display: grid;
+  place-items: center;
+}
+
+
+.b-header {
+
+  @extend .b-flex-col;
+
+  @extend .purple;
+
+  h2 {
+    @extend .b-flex-center;
+  }
+}
+
+.b-bordertop {
+  border-top: 1px solid blue;
+}
+
+.b-borderbottom {
+  border-bottom: 1px solid blue;
+}
+
+.b-borders {
+  @extend .b-bordertop;
+  @extend .b-borderbottom;
+}
+
+
+//----------------------------------------
+// Name is Deprecated need to update still
+//----------------------------------------
+
+
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-end {
+  justify-content: flex-end;
+  // align-items: right;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    justify-content: space-between;
+    // justify-content: space-evenly;
+    text-align: center;
+}
+
+
+// TODO: make items not wrap
+.grid-center {
+  display: grid;
+  place-items: center;
+}
+
+.onecol {
+  // @extend .content-container;
+  @extend .flex-container-row;
+  @extend .orange;
+  // grid-gap: 3rem;
+}
+
+.twocol {
+}
+
+.tworow {
+  @extend .flex-container-row;
+}
+
+.threewide {        
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+
+.rowwrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+
+    // list-style-type: none;          // not sure what this does
+}
+
+
+
+
+.header {
+
+  @extend .flex-container-col;
+
+  @extend .purple;
+
+  h2 {
+    @extend .flex-center;
+  }
+}
+
+.display-none {
+  display: none
+}
+
+
+.container {
+    padding: 0 0;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+
+.section-container {
+    max-width: 1000px;
+    // padding: 0 0;
+    // margin: 110px auto;
+    padding: 110px 0;
+    margin: 0 auto;
+    overflow: auto;
+    width: 100%;
+}
+
+
+
+//-------------------------------
+// Deprecated v2
+//-------------------------------
+
+// .colorprimary {
+//   @include set-background($primary-color-1);
+// }
+
+// .colorsecondary {
+//   @include set-background($primary-color-2);
+// }
+
+.primarycolor {
+  @include set-background($primary-color-1);
+}
+
+.flexcol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexrow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-container-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-container-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gridcenter {
+  display: grid;
+  place-items: center;
+}
+
+.flex-item {
+  // text-align: center;
+  // justify-content: center;
+ 
+  // display: flex;
+  // flex-direction: column;
+
+  // flex-grow: 1;
+  // height: 100%;
+  width: 100%;
+}
+
+.item {        
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+

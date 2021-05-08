@@ -1,0 +1,73 @@
+/* Hero Story
+TODO: fix small viewport
+------------------------------------*/
+
+
+.l-herostory-wrapper {
+
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+
+  @extend .wheat;
+
+}
+
+
+//TODO: fix small viewport
+.l-herostory-photo {
+
+
+  img {
+  
+      width: 100%;
+      max-width: 550px;
+      height: 450px;
+      // object-fit: scale-down;
+      // padding: 0 8%;
+  }
+}
+
+
+.l-herostory-view {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.l-herostory-title, .l-herostory-subtitle, .l-herostory-bodytext {
+
+  margin: 1.5% 0;
+}
+
+.l-herostory-title {
+  // display: flex;
+  // justify-content: flex-start;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  @extend .blue;
+}
+
+
+.l-herostory-subtitle {
+  // display: flex;
+  // justify-content: flex-start;
+  
+  text-align: left;
+  padding: 5px 0;
+  @extend .red;
+}
+
+
+.l-herostory-bodytext {
+  // display: flex;
+  // justify-content: flex-start;
+  text-align: left;
+  
+  @extend .orange;
+}
+

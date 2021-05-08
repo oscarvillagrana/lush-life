@@ -1,0 +1,379 @@
+/* Cart
+------------------------------------------------*/
+
+.l-cart-wrapper {
+  padding: 12px 0;
+}
+
+.l-cart-photowrapper {
+  max-width: 18%;
+
+  display: grid;
+  place-items: center;
+
+  img {
+
+    height: 120px;
+    width: 100px;
+    // object-fit: scale-down;
+    padding: 8px 0;
+    padding-right: 8px;
+  }
+}
+
+
+.l-cart-titlewrapper {
+
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  // align-items: left;
+
+  // flex: 0 0 80%;
+  // max-width: 80%;
+  
+  width: 100%;
+  // height: 100%;
+  
+  margin-left: 3.5%;
+  margin-right: 8%;
+
+  @extend .yellow;
+}
+
+
+
+.l-cart-title {
+
+  margin: 2% 0;
+  width: 100%;
+  text-align: left;
+  @extend .teal;
+}
+
+
+.l-cart-subtitle {
+
+  // @extend .flex-item;
+  width: 100%;
+  text-align: left;
+  @extend .teal;
+}
+
+
+.cart-pricecurrency {
+  display: none;
+  
+}
+
+
+.l-cart-pricetools-wrapper, .l-cart-pricedetails-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  // justify-content: center;
+  justify-content: space-around;
+  width: 100%;
+
+}
+
+.l-cart-pricedetails-wrapper {
+
+  overflow: hidden;
+
+  place-items: center;
+
+  width: 100%;
+  max-width: 35%;
+  padding: 0 3%;
+
+  @extend .orange;
+}
+
+.l-cart-pricetools-wrapper {
+
+}
+
+
+.l-cart-textinput, .l-cart-price, .l-cart-btn-remove{
+  height: 30px;
+
+}
+
+.l-cart-btn-remove-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  
+  @extend .red;
+
+}
+
+.l-cart-btn-remove {
+
+  // flex: 0 0 33.3333333%;
+  // max-width: 33.3333333%;
+
+}
+
+.l-cart-price {
+  @extend .teal;
+  // width: 1000px;
+
+  // overflow: hidden;
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+}
+
+//TODO: make static width everywhere
+.l-cart-textinput {
+  @extend .blue;
+
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+}
+
+
+.l-cart-total {
+  @extend .teal;
+  // width: 1000px;
+
+  // overflow: hidden;
+  flex: 0 0 33.3333333%;
+  max-width: 33.3333333%;
+}
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Deprecated
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+// flex box way
+.cart2-deprecated {
+    
+    @include set-background($primary-color-1);
+
+    // mixin replaces the following two lines
+    // background-color: $primary-color-1;
+    // color: set-text-color($primary-color-1);
+
+    // anoying format
+    .section-container {
+      // width: 300px;
+    }
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    // display: flex;
+
+    .content {
+
+      article {
+        @extend .border-top;
+        @extend .border-bottom;
+        @extend .flex-container-row;
+        @extend .flex-center;
+      }
+
+
+    img {
+        width: 100px;
+        height: 100px;
+        // object-fit: scale-down;
+        padding: 0 8%;
+    }
+
+
+    .c-p-photo-container {
+
+      @extend .flex-container-col;
+      justify-content: center;
+
+      height: 120px;
+
+      @extend .wheat;
+    }
+
+
+    .c-p-name-container {
+
+      @extend .flex-container-row;
+      // @extend .flex-center;
+
+      // align-items: left;
+      
+      // flex: 0 0 80%;
+      // max-width: 80%;
+      
+      width: 100%;
+      // height: 100%;
+      
+      padding: 0 8%;
+
+      @extend .yellow;
+    }
+
+
+    .c-price-details-container {
+
+      // none of this does not center y!
+      @extend .flex-container-row;
+      justify-content: right;
+
+      width: 100%;
+
+      max-width: 25%;
+
+      padding: 0 4%;
+
+      @extend .pink;
+    }
+
+
+    .c-p-name {
+
+      @extend .flex-item;
+      
+      @extend .teal;
+    }
+
+
+    .c-price-details {
+      
+      @extend .flex-container-col;
+      // flex: 0 0 50%;
+      // max-width: 50%;
+      
+      // flex: 0 0 50%;
+      // height: 100%;
+
+    }
+
+    .c-price, .c-available {
+      @extend .flex-item;
+    }
+
+    .c-price {
+      // flex: 0 0 50%;
+      // max-width: 50%;
+      @extend .teal;
+      // width: 1000px;
+    }
+
+    .c-buttons {
+      @extend .flex-container-row;
+
+    }
+
+    // .c-description {
+    //   flex: 0 0 50%;
+    //   max-height: 50%;
+    //   @extend .wheat;
+    // }
+
+    .btn-remove {
+
+    }
+    
+
+    .border-top {
+      border-top: 1px solid blue;
+    }
+
+    .border-bottom {
+      border-bottom: 1px solid blue;
+    }
+
+  }
+
+}
+
+
+// table table-row way
+.cart3-deprecated {
+    
+    @include set-background($primary-color-1);
+
+    // mixin replaces the following two lines
+    // background-color: $primary-color-1;
+    // color: set-text-color($primary-color-1);
+
+    // anoying format
+    .section-container, table {
+      width: 100%;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: scale-down;
+    }
+
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    // display: flex;
+
+    .content {
+
+      // display: flex;
+      flex-direction: column;
+
+
+      table {
+          display: table;
+          // width: 1000px;
+          // min-width: 1000px;
+          // max-width: 1100px;
+      }
+
+      thead {
+        display: table-header-group;
+       
+      }
+
+      tbody {
+          display: table-row-group;
+      }
+
+      tr {
+
+          display: table-row;
+      }
+
+      td {
+
+          // flex: 0 0 25%;
+          // max-width: 25%;
+
+      }
+
+      .cart-product {
+          display: flex;
+      }
+
+      .border-top {
+        border-top: 1px solid blue;
+      }
+
+      .border-bottom {
+        border-bottom: 1px solid blue;
+      }
+    }
+
+}
+
+

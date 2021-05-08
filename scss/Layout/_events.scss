@@ -1,0 +1,94 @@
+
+/* Events
+-------------------------------------*/
+
+.event-colors {
+  @include set-background($primary-color-1);
+}
+
+
+.event {   
+  article {
+    margin: 4% 0;
+    padding: 0 1.5%;
+    max-height: 120px;
+
+    // margin: 0 0 4vw;
+  }
+}
+
+.event-photo-container {
+  img {
+  // TODO: fix width unflexibness
+  // width: 100%;
+    width: 100px;
+    height: 100px;
+    // object-fit: scale-down;
+    // margin: 0 2%;
+    @extend .white;
+
+  }
+  
+  overflow: hidden;
+
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.event-info-container {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding: 0 1.5%;
+}
+
+.event-place-container {
+  display: none;
+}
+
+.event-offer-container {
+  // max-width: 100%;
+  flex: 0 0 25%;
+  max-width: 25%;
+
+  // overflow: hidden;
+}
+
+.event-date, .event-time, .event-name, .event-button {
+  // @extend .flex-item;
+  // justify-content: left;
+  // align-items: left;
+  width: 100%;
+  text-align: left;
+}
+ 
+.event-date {
+  @extend .teal;
+
+  height: 100%;
+  padding: 0 10%;
+}
+
+
+.event-time {
+  @extend .red;
+
+  height: 100%;
+  padding: 0 10%;
+
+}
+
+.event-name {
+  @extend .teal;
+  
+  min-height: 50%;
+  max-height: 120px;
+
+  display: flex;
+  felx-direction: column;
+  align-items: center;
+  // justify-content: center;
+  h3 {
+    text-align: left;
+  }
+
+}

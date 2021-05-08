@@ -1,0 +1,73 @@
+//-----------------
+// Template Queries
+//-----------------
+
+
+
+// 4 viewports
+//--------------------
+
+// Desktop
+@media(min-width: 770px) {
+
+}
+
+// Tablet
+@media(max-width: 769px) {
+
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+}
+
+// 3 viewports
+//--------------------
+
+@media(min-width: 750px) {
+
+}
+
+@media(max-width: 1000px) {
+
+  .l-footer-logo {
+
+    display: grid;
+    place-items: center;
+
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .l-footer-home-wrapper  {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; 
+  }
+
+  .l-footer-credits-wrapper {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%; 
+  }
+
+  .l-footer-liscense-wrapper {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+  }
+
+  .l-footer-links-wrapper {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

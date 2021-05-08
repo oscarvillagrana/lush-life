@@ -1,0 +1,76 @@
+/* Hero
+------------------------------------------------*/
+
+.l-hero-wrapper {
+    
+    flex-direction: row;
+}
+    
+.l-hero-photo {
+
+    width: 50%;
+}
+
+.l-hero-title, .l-hero-longtext, .l-hero-buttons {
+    margin: 15px;
+}
+
+.l-hero-title {
+
+}
+.l-hero-longtext {
+
+}
+
+.l-hero-buttons {
+
+    display: flex;
+    flex-direction: row;   
+    height: 40px;
+    width: 80px;
+
+    @extend .purple;
+}
+
+// Deprecated
+
+.about-deprecated {
+    
+    @include set-background($primary-color-2);
+
+    // mixin replaces the following two lines
+    // background-color: $primary-color-1;
+    // color: set-text-color($primary-color-1);
+
+    // height: 100%;
+
+    // display: flex;
+
+    img {
+        // padding: 0 0;
+        // max-width: 1100px;
+    }
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    .content {
+
+        flex-direction: row;
+        img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+
+        // p {
+        //     margin: 20px 0;
+        //     text-align: left;
+        // }
+    }
+
+}
+

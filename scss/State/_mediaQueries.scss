@@ -1,0 +1,314 @@
+//--------------------
+// Text
+//--------------------
+
+
+@media(min-width: 750px) {
+  
+  h2 {
+      // font-size: 40px;
+  }
+  h3 {
+      // font-size: 32px;
+  }
+  h4 {
+      // font-size: 26px;
+  }
+}
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 749px) {
+  
+  h2 {
+    // height: 100%;
+      // font-size: 32px;
+  }
+  h3 {
+    // height: 100%;
+      // font-size: 26px;
+  }
+  h4 {
+    
+    // background-color: black;
+    // height: 100%;
+    // font-size: 20px;
+    // font-size: 100%;
+  }
+}
+
+// small
+@media(max-width: 589px) {
+
+  h2 {
+      // font-size: 32px;
+  }
+  h3 {
+      // font-size: 18px;
+  }
+  h4 {
+      // text-align: center;
+
+      // font-size: 15px;
+      
+      // background-color: blue;
+  }
+  h5 {
+      // text-align: center;
+      
+      // font-size: 10px;
+      
+      // background-color: blue;
+  }
+}
+
+
+//------------
+// Cover
+//------------
+
+
+
+// middle breaking point
+@media(min-width: 750px) {
+  .cover {
+
+    img {
+      max-height: 650px;
+    }
+  }
+}
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 749px) {
+  .cover {
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+// small
+@media(max-width: 589px) {
+  .cover {
+
+    img {
+      object-fit: contain;        // not necesary becuase it seems to be default
+    }
+
+    .content {
+      text-align: center;
+
+      img {
+      }
+    }
+  }
+}
+
+
+// largest breaking point
+@media(min-width: 750px) {
+  .cover2 {
+
+    img {
+      max-height: 650px;
+    }
+  }
+}
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 749px) {
+  .cover2 {
+
+    img {
+      // background-size: contain;
+    }
+  }
+}
+
+// small
+@media(max-width: 589px) {
+  .cover2 {
+
+  // padding-top: 2.5rem 0;
+
+  img {
+    // background-size: contain;
+  }
+
+    .content {
+      text-align: center;
+    }
+  }
+}
+
+
+
+@media(max-width: 720px) {
+  .about {
+    height: 300px;
+
+      // text-align: center;
+
+      img {
+        display: none
+      }
+    
+  }
+}
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Products
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 1100px) {
+
+  .products {
+
+    .content {
+
+      article {
+        
+        flex: 0 0 50%;
+        min-width: 50%;
+      }
+      
+    }
+  }
+}
+
+// smallest breaking point
+@media (max-width: 581px) {
+  .products {
+
+    .content {
+      
+      article {
+         
+        flex: 0 0 50%;
+        min-width: 50%;
+      }
+    }
+  }
+}
+
+
+
+// // middle breaking point
+// @media(min-width: 590px) and (max-width: 1100px) {
+
+//   .products3 {
+
+//     .content {
+
+//       .item {
+        
+//         flex: 0 0 50%;
+//         max-width: 50%;
+//       }
+      
+//     }
+//   }
+// }
+
+// // smallest breaking point
+// @media (max-width: 581px) {
+//   .products3 {
+
+//     .content {
+      
+//       display: block;
+//       text-align: center;
+
+//       ul {
+//         display: block;
+//       }
+      
+//       .item {
+
+//          max-width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// // middle breaking point
+// @media(min-width: 590px) and (max-width: 1100px) {
+
+//   .products2 {
+
+//     .content {
+
+//       // margin-right: 15px;
+//       // margin-left: 15px;
+
+//       .item {
+        
+//         flex: 0 0 50%;
+//         max-width: 50%;
+//       }
+//     }
+//   }
+// }
+
+// // smallest breaking point
+// @media (max-width: 581px) {
+//   .products2 {
+
+//     .content {
+      
+//       // display: block;
+//       // text-align: center;
+      
+//       // margin-right: 5px;
+//       // margin-left: 5px;
+//       .item {
+        
+//         // max-width: 100%;
+//       }
+//     }
+//   }
+// }
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Events
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 1100px) {
+
+  .event {
+
+    article {
+      
+    }
+    
+  }
+}
+
+// smallest breaking point
+@media (max-width: 581px) {
+  .event {
+
+    article {
+       // margin: 0 4vw 0 4vw;
+    }
+  }
+}
+
+

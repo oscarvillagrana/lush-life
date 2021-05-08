@@ -1,0 +1,80 @@
+
+
+/* Main Header Nav
+-------------------------------------------------*/
+
+// Desktop
+@media(min-width: 770px) {
+.l-nav-wrapper {
+  overflow: hidden;
+}
+
+//TODO: make padding flexible
+
+.l-nav-view {
+
+    overflow: hidden;
+
+    li {
+        padding: 0 25px;
+    }
+  }
+
+  .l-nav-logo-wrapper {
+
+    // background-color: black;
+
+    width: 400px;
+
+    // display: grid;
+    // place-items: center;
+  
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+
+
+    // width: 100%;
+    // -webkit-box-flex: 0;
+    // -webkit-flex: 0 0 58.333333%;
+    // flex: 0 0 58.333333%;
+    // max-width: 58.333333%; 
+  }
+    
+  .l-nav-logo-view {
+    // overflow: hidden;
+
+
+    flex-grow: 1;
+  }
+}
+
+// Tablet
+@media(min-width: 570px) and (max-width: 769px) {
+
+
+//TODO: fix overflow
+
+.l-nav-wrapper {
+  overflow: hidden;
+}
+
+  .l-nav-view {
+    // background-color: black;
+
+    li {
+        padding: 5%;
+    }
+  }
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+}
+

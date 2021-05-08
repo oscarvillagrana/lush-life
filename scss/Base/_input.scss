@@ -1,0 +1,43 @@
+
+.b-input-box-wrapper {
+  
+  overflow: none;
+
+  display: flex;
+  flex-direction: column;
+  // width: 100%;
+
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: red;
+
+  margin: 25px;
+
+}
+
+.b-input-box {
+  border-style: solid;
+  border-width: 0 0 1px;
+  // background-color: teal;
+  // width: 100%;
+  max-width: 600px;
+  min-width: 400px;
+
+  height: 30px;
+}
+
+.b-input-checkbox {
+  border-style: solid;
+  border-width: 0 0 1px;
+  // background-color: teal;
+
+  // @extend .border-bottom;
+}
+
+.b-input-form {
+  
+}
+
+.b-input-box-error {
+  // background-color: white;
+}

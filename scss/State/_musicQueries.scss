@@ -1,0 +1,114 @@
+/* 4 viewports
+-----------------------------------------*/
+
+
+// Desktop
+@media(min-width: 770px) {
+
+
+  .music-cover, .featured-track, .story-list, .track-list {
+
+    .content {
+
+      article {
+        
+        flex: 0 0 50%;
+        min-width: 50%;
+      }
+      
+    }
+  }
+
+  .l-mus-coverstories {
+    
+    display: flex;
+    flex-direction: row;
+    // background-color: black;
+
+    .l-mus-mainstory {
+    
+    }
+
+    .l-mus-sidestories {
+
+    }
+
+  }
+
+}
+
+// Tablet
+@media(max-width: 769px) {
+
+  .music-cover, .story-list, .track-list {
+
+    .content {
+      
+      article {
+         
+        flex: 0 0 50%;
+        min-width: 50%;
+      }
+    }
+  }
+
+  .l-mus-coverstories {
+    
+    display: flex;
+    flex-direction: column;
+    // background-color: black;
+  }
+
+
+  .l-mus-mainstory {
+  
+  }
+
+    
+  .l-mus-sidestories {
+    display: flex;
+    flex-direction: row;
+
+    overflow: auto;
+    // justify-content: center;
+
+    min-width: 100%;
+
+    img {
+
+      // display: none;
+      width: 290px !important;
+      height: 210px !important;
+      // width: 100%;
+      // height: 100%;
+
+    }
+  }
+}
+
+// Mobil Landscape
+@media(min-width: 320px) and (max-width: 569px) {
+
+}
+
+// Mobil Portrait
+@media (max-width: 319px) {
+
+}
+
+
+/* 3 viewports
+-----------------------------------------*/
+
+
+// middle breaking point
+@media(min-width: 590px) and (max-width: 1100px) {
+
+}
+
+
+// smallest breaking point
+@media (max-width: 581px) {
+
+}
+

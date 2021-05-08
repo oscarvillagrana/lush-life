@@ -1,0 +1,72 @@
+/* Banner Image
+------------------------------------------------*/
+
+.cover {
+    
+    // @include set-background($primary-color-1);
+
+    // mixin replaces the following two lines
+    // background-color: #fff;
+    color: set-text-color($primary-color-1);
+
+    // height: 650px;
+    height: 100%;
+
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    // height: 100%;
+    
+    // inactive
+    .content {
+
+
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+    
+
+    }
+
+}
+
+
+
+
+.cover2 {
+    
+    // @include set-background($primary-color-1);
+
+    // mixin replaces the following two lines
+    // background-color: #fff;
+    color: set-text-color($primary-color-1);
+
+    // height: 650px;
+    height: 100%;
+
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    img {
+        width: 100%;
+        // background-size: 100%;                   // for ie support
+        object-fit: cover;
+    }
+
+    // height: 100%;
+    
+    // inactive
+    .content {
+    
+    }
+
+}
+
+

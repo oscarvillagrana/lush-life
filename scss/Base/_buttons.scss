@@ -1,0 +1,109 @@
+// TODO: research the following
+.box {
+  box-sizing: border-box;
+  display: inline-block;
+  float: none;
+  line-height: normal;
+  position: static;
+  z-index: auto;
+}
+
+%btn {
+  display: inline-block;  
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(.98);
+  }
+}
+
+%btn-size {
+  padding: 8px 20px;
+  margin: 3px;
+}
+
+%btn-sizeone { 
+  height: 29px;
+  width: 199px;
+
+  @extend h3;
+  // font-size: 20px;
+}
+
+%btn-sizetwo { 
+  @extend .grid-center;
+
+  height: 29px;
+  width: 199px;
+
+  @extend h4;
+  // font-size: 18px;
+}
+
+%btn-sizethree { 
+  height: 25px;
+  width: 55px;
+
+  @extend h5;
+  // font-size: 14px;
+}
+
+
+
+.btn-primary {
+  // @extend %btn-size;
+  @extend %btn;
+    @include set-background(lighten($primary-color-1, 10%));
+
+    // mixin include replaces the following
+    // background-color: lighten($primary-color-1, 10%);
+}
+
+.btn-secondary {
+  // @extend %btn-size;
+  @extend %btn;
+    @include set-background($secondary-color-1);
+
+    // mixin include replaces the following
+    // background-color: $secondary-color-1;
+}
+
+// Size one
+.btn-subscribe {
+  // @extend %btn-sizeone;
+  @extend .btn-primary;
+  // @extend .grid-center;
+
+  // justify-content: flex-end;
+  // text-align: right;
+
+  // margin: 0 10%;
+
+  height: 35px;
+  // padding: 0 4vw;
+  width: 80%;
+
+  // @extend .flex-container-col;
+
+  // // align-items: center;
+
+  // @extend .red;
+}
+
+// Size two
+.btn-addtocart {
+  // @extend %btn-sizetwo;
+  @extend .btn-primary;
+
+  @extend .blue;
+  @extend .flex-item;
+  // @extend .grid-center;
+}
+
+// Size three
+.btn-remove {
+  // @extend %btn-sizethree;
+  @extend .btn-primary;
+  @extend .grid-center;
+
+}

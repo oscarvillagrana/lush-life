@@ -1,0 +1,207 @@
+
+//TODO: ceneter milti-lines
+
+/* Specials v1 (a table of specials)
+------------------------------------------------*/
+
+.l-wellytables-wrapper {
+
+    @include set-background($primary-color-1);
+}
+
+.l-wellytables-view {
+
+}
+
+
+.l-wellytable-wrapper {
+
+    @include set-background($primary-color-1);
+
+    padding: 15px 0;
+
+    height: 100%;
+
+    img {
+      display: none;                // for now there are no images
+    }
+}
+
+.l-wellytable-view {
+
+  overflow: hidden;
+
+  // overrides anchor highlighting
+  a {
+    color: set-text-color($primary-color-1);
+  }
+
+  .b-col {    
+      
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-basis: 100%;
+
+      .Photo-Gallery-Container{
+          display: none;
+      }
+  }
+
+  .b-cols-2 {
+
+      display: flex;
+      flex-direction: row;
+      flex-basis: 100%;
+
+      h4, h5 {
+          display: flex;
+          justify-content: center;
+          
+          //TODO: ceneter milti-lines
+          // margin: auto;                    // centers collumn but does not look good for this
+      }        
+  }
+
+  .b-col-1 {
+      flex-basis: 75%;
+  }
+
+  .b-col-2 {
+      flex: 0 0 30%;
+  }
+
+  .l-wellyspecial-details {
+    flex-wrap: nowrap;
+  }
+
+  .l-wellyspecial-name, .l-wellyspecial-venue, .l-wellyspecial-countdown, .l-wellyspecial-distance {
+      padding: 0 5px;
+  }
+
+
+  .l-wellyspecial-name {
+    flex: 0 0 60%;
+  }
+
+  .l-wellyspecial-venue {
+    flex: 0 0 40%;
+  }
+
+  .l-wellyspecial-countdown {}
+  .l-wellyspecial-distance {}
+  .l-wellyspecial-description {}
+
+}
+
+
+ 
+/* Specials v2 (with special-box)
+------------------------------------------------*/
+
+.l-wellyspecials-wrapper {
+   
+  @include set-background($primary-color-1);
+  height: 100%;
+}
+
+.l-wellyspecials-view {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;    
+
+  h2 {
+      align-items: center;
+  }
+
+  h1 {
+      font-size: 50px;
+      line-height: 1.2;
+  }
+
+  p {
+      // margin: 20px 0;
+  }
+}
+
+
+
+.l-wellyspecial-wrapper {
+
+  .container {
+      max-width: 1050px;
+  }
+
+  height: 100%;
+  width: 100%;
+
+  h3 {
+    font-size: 45;
+  }
+
+  img {
+    // height: 180px;
+    display: none;                // for now there are no images
+  }
+}
+
+.l-wellyspecial-box {
+  margin: 3px;
+  border: 2px solid #999;
+  border-radius: 15px 15px;
+  padding-right: 15px;
+  padding-left: 15px; 
+}
+
+.l-wellyspecial-view {
+
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-size: 15px;
+  }
+
+  .special-description {
+    font-size: 12px;
+  }
+
+}
+
+
+.l-wellyspecial-name {
+  font-size: 17px;
+  text-align: left;
+}
+
+.l-wellyspecial-venue {
+  font-size: 15px;
+  text-align: right;
+}
+
+.l-wellyspecial-countdown {
+  p {
+    text-align: left;  
+  }
+}
+
+.l-wellyspecial-distance {
+  text-align: right;
+}
+
+.l-wellyspecial-description {
+  
+}
+
+
+// .top {
+//   height:100%;
+//   margin: 4px 0px 4px 0px;
+// }
+
+// .bottom {
+//   margin: 0px 0px 6px 0px;  
+//   font-size: 11px;
+// }

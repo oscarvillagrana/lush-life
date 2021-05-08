@@ -1,0 +1,51 @@
+/* Header 
+------------------------------------------------*/
+
+.l-nav-wrapper {
+    width: 100%;
+    height: 65px;
+    max-width: 1200px;
+    // padding: 0 10px;
+}
+
+.l-nav-view {
+
+    // temp
+    overflow: hidden;
+
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+    // flex-wrap: nowrap;
+    }
+
+    li {
+        padding: 1%;
+    }
+
+    a {
+        color: set-text-color($primary-color-1)
+    }
+
+    a:hover {
+        color: $primary-color-1;
+    }
+}
+
+.l-nav-links {
+    display: flex;
+    list-style-type: none;
+
+    // align-items: right;
+    justify-content: right;
+    // width: 100%;
+
+}
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+

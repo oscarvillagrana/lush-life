@@ -1,0 +1,53 @@
+/* Footer
+------------------------------------------------*/
+
+.footer {
+    
+    @include set-background($primary-color-2);
+
+    // mixin replaces the following two lines
+    // background-color: $primary-color-1;
+    // color: set-text-color($primary-color-1);
+
+    // height: 100%;
+
+    // was replaced by mixin inport
+    // a { color: #fff; }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.l-footer-logo, .l-footer-home-wrapper, .l-footer-credits-wrapper, .l-footer-liscense-wrapper, .l-footer-links-wrapper {
+    text-align: center;
+}
+
+.l-footer-logo {
+}
+
+
+.l-footer-home  {
+}
+
+.l-footer-credits-wrapper {
+}
+
+.l-footer-liscense-wrapper {
+}
+
+.l-footer-links-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    li {
+        display: flex;
+        // flex-direction: row;
+        padding: 0 5px;
+    }
+
+}

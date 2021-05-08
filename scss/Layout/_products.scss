@@ -1,0 +1,23 @@
+.product-colors {
+  @include set-background($primary-color-1);
+}
+
+.product-container {
+
+  img {
+      width: 80%;
+      // object-fit: scale-down;
+  }
+
+  padding: 8%;
+
+  @extend .purple;
+}
+
+product-price {
+    // overflow: hidden;
+}
+
+.product-description-container {
+    // padding: 5px;
+}
